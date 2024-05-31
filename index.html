@@ -4,10 +4,588 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal-Protfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="icons/url-icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        .home-img img {
+        height: 400px;
+        box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        }
+        .skills-description h3{
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+        .skills-description p{
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin-bottom: 2%;
+        }
+        .skills-info .education h4 label{
+            width: 40%;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
+
+        <!----Scroll top to bottom start---->
+
+<div class="scrollToTop-btn">
+    <i class="fas fa-arrow-up" style="margin-left: 15px; font-size: 25px; margin-top: 10px;"></i>
+</div>
+        <!----Scroll top to bottom end---->
+
+    <!-----header start---->
+    <header> 
+        <div class="nav-bar">
+            <a href="#" class="logo">Personal</a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <div class="nav-close-btn"></div>
+                    <a class="active" href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#protfolio">Protfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-menu-btn"></div>
+        </div>
+    </header>
+    <!-----header end---->
+
+    <!-----light dark theme start---->
+
+<div class="theme-btn flex-center">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+</div>
+
+
+    <!-----home start---->
+    <section class="home flex-center" id="home">
+        <div class="home-container">
+            <div class="media-icons">
+                <a href="https://github.com/HyperDevil-X" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://profile.indeed.com/" target="_blank"><i class="fa-solid fa-info"></i></a>
+                <a href="https://www.linkedin.com/in/manoj-bid-0a1113220/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="info">
+                <h2>Hi, I am Monaj</h2>
+                <h3>Full Stack Developer & UI/UX Designer</h3>
+                <p>I create stunning websites for your business, Highly experienced in Web Development and UI/UX Design.</p>
+                <a href="#contact" class="btn">Contact me <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="home-img">
+                <img src="images/1716791842771.jpg" alt="">
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+    </section>
+        <!-----home end---->
     
+        <!-----about start---->
+    <section class="about section" id="about">
+        <div class="container flex-center">
+            <h1 class="section-title-01">About me</h1>
+            <h2 class="section-title-02">About me</h2>
+            <div class="content flex-center">
+                <div class="about-img">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h3>I'm Monaj</h3>
+                        <h4>A Lead <span>Full Stack Web Developer</span> based in <span>Durgapur, West Bengal</span></h4>
+                        <p>I am a full stack web developer and UI/UX designer from Durgapur, West Bengal. With a passion for creating seamless and intuitive digital experiences, I specialize in both front-end and back-end development, ensuring that every project is not only functional but also visually engaging. My background in UI/UX design allows me to craft user-centered interfaces that enhance usability and satisfaction, making the web a more accessible and enjoyable place.</p>
+                    </div>
+                    <ul class="professional-list">
+                        <li class="list-item">
+                            <h3>2+</h3>
+                            <span>Years of <br>Experience</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>20+</h3>
+                            <span>Happy <br>Customers</span>
+                        </li>
+                        <li class="list-item">
+                            <h3>5+</h3>
+                            <span>Sucess <br>Projects</span>
+                        </li>
+                    </ul>
+                    <a href="../Protfolio/file/Monaj_BId_CV.pdf" class="btn" download target="_blank">Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-----about end---->
+
+        <!-----skills start---->
+
+    <section class="skills section" id="skills" style="margin-top: 12%;">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Skills</h1>
+            <h2 class="section-title-02">Skills</h2>
+            <div class="content">
+                <div class="skills-description">
+                    <h3>Educations & Skills</h3>
+                    <p>For more than a years our experts have been accomplishing enough with modern Web Development and UI/UX Designing</p>
+                </div>
+                <div class="skills-info education-all">
+                    <div class="education">
+                        <h4><label>Education</label></h4>
+                        <ul class="edu-list">
+                            <li class="item">
+                                <span class="year">2005-2017</span>
+                                <p><span>Matrix</span> - Pranavananda Vidya Mandir , Durgapur , West Bengal</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2017-2019</span>
+                                <p><span>Higher Secondary</span> - R P Vivekananda Vidyapith  , Durgapur , West Bengal</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2019-2021</span>
+                                <p><span>Diploma in Computer Science</span> - Dr B.C Roy Polytechnic College  , Durgapur , West Bengal</p>
+                            </li>
+                            <li class="item">
+                                <span class="year">2021-2024</span>
+                                <p><span>B-Tech in Computer Science</span> - Techo International Newtown  , Kolkata , West Bengal</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Skills</label></h4>
+                        <ul class="bars">
+                            <li class="bar">
+                                <div class="info">
+                                    <span>HTML5</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="line html"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="line css"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>JavaScript(Basic)</span>
+                                    <span>20%</span>
+                                </div>
+                                <div class="line js"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>PHP(Basic)</span>
+                                    <span>35%</span>
+                                </div>
+                                <div class="line php"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Reactjs(Beginner)</span>
+                                    <span>20%</span>
+                                </div>
+                                <div class="line reactjs"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Mysql</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="line mysql"></div>
+                            </li>
+                            <!-- <div class="break" style="position: absolute; margin-bottom: -10%; margin-left: 34%;margin-top: -46.2%;width: 32.7%;"> -->
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Phpmyadmin</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="line phpmyadmin"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Wordpress</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="line wordpress"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>Mongodb(Beginner)</span>
+                                    <span>20%</span>
+                                </div>
+                                <div class="line mongodb"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>.Net</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="line net"></div>
+                            </li>
+                            <!-- </div> -->
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h4><label>Certifications</label></h4>
+                        <ul class="edu-list">
+                            <a href="https://drive.google.com/file/d/1F2rqqM-5AZW9lKXSMy5w6i7KGHzY6IpG/view" target="_blank"><li class="item">
+                                <h1>Flexon Labs, Durgapur</h1>
+                                <span class="year">10th July,2020 - 15th Dec,2020 </span>
+                                    <p><span>Web Development course</span> using- Html, CSS, PHP, MYSQL</p>
+                            </li></a>
+                            <a href="https://drive.google.com/file/d/1D4JzdEaVxrGd-lJzsQosoexrcY2IsBHA/view" target="_blank"><li class="item">
+                                <h1>Flexon Labs, Durgapur</h1>
+                                <span class="year">25th Jan,2021 - 28th July,2021</span>
+                                    <p><span>Web Development course</span> using- ASP .NET and MYSQL SERVER</p>
+                            </li></a>
+                            <a href="https://drive.google.com/file/d/1X5kyej-KWLKFmMAv7lTEwdoTTJCWgeAA/view" target="_blank"><li class="item">
+                                <h1>Techno International Newtown</h1>
+                                <span class="year">22nd Feb,2024 - 05th March,2024</span>
+                                    <p><span>Industrial Training</span> on- Essentials Of Cyber Security</p>
+                            </li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-----skills end---->
+
+        <!-----services start---->
+
+    <section class="services section" id="services"style="margin-top: 5%;">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Services</h1>
+            <h2 class="section-title-02">Services</h2> 
+            <div class="content">
+                <div class="services-description">
+                    <h3>What I Provide</h3>
+                </div>
+                <ul class="service-list">
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>UI/UX Consultancy</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>UI/UX Consultancy</h3>
+                                <h4>What is UX Consulting?</h4>
+                                <p>UX Consulting helps companies improve their product's overall usability and optimize expenses by implementing the right UX processes, methods and tools</p>
+                                <h4>What I Provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Establish the right UX processes</li>
+                                    <li><i  class="fas fa-check-circle"></i> Create exceptional user experience</li>
+                                    <li><i  class="fas fa-check-circle"></i> Discover new business opportunities</li>
+                                    <li><i  class="fas fa-check-circle"></i> Save resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-file-code"></i>
+                            <h3>Web Application</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Web Application</h3>
+                                <h4>What is Web Application</h4>
+                                <p>A Web Application is an interactive software program that runs on a web server and is accessed through a web browser.</p>
+                                <h4>What I Provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Web Application Develope</li>
+                                    <li><i  class="fas fa-check-circle"></i> Testing</li>
+                                    <li><i  class="fas fa-check-circle"></i> Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fa-solid fa-desktop"></i>
+                            <h3>Desktop Application</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Desktop Application</h3>
+                                <h4>What is Desktop Application ?</h4>
+                                <p>A desktop application is software designed to run on personal computers or laptops. It is installed directly on the user's device and can function independently of an internet connection.</p>
+                                <h4>What I Provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Desktop Application Develope</li>
+                                    <li><i  class="fas fa-check-circle"></i> Testing</li>
+                                    <li><i  class="fas fa-check-circle"></i> Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fa-brands fa-webflow"></i>
+                            <h3>Website  Design</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Website  Design</h3>
+                                <h4>What is website ?</h4>
+                                <p>A Website is a collection of interlinked web pages hosted on a server, accessible via the internet. </p>
+                                <h4>What I Provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Websites Develope and Design</li>
+                                    <li><i  class="fas fa-check-circle"></i> Testing</li>
+                                    <li><i  class="fas fa-check-circle"></i> Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <!-----services end----->
+
+        <!----Protfolio start---->
+
+<section class="protfolio section" id="protfolio" style="margin-top: 12%;"> 
+    <div class="container flex-center">
+        <h1 class="section-title-01">Protfolio</h1>
+        <h2 class="section-title-02">Protfolio</h2> 
+        <div class="content">
+            <div class="protfolio-list">
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Web Application </h3>
+                            <span>E-commerce using Wordpress</span>
+                        </div>
+                        <img src="images/ecommerce.jpg" alt="">
+                    </div>
+                    <div class="protfolio-model flex-center">
+                        <div class="protfolio-model-body">
+                            <i class="fas fa-times protfolio-close-btn"></i>
+                            <h3>Bigmart</h3>
+                            <a href="https://github.com/HyperDevil-X/bigmart" target="_blank"><img src="images/ecommerce1.jpg" alt=""></a>
+                            <p>An eCommerce web application enables businesses to sell products and services online, providing customers with a seamless shopping experience from the comfort of their homes. It integrates features such as product listings, shopping carts, secure payment gateways, and order management systems, ensuring a smooth and efficient transaction process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Desktop Application </h3>
+                            <span>School Management System using C# .net</span>
+                        </div>
+                        <img src="images/school1.jpg" alt="">
+                    </div>
+                    <div class="protfolio-model flex-center">
+                        <div class="protfolio-model-body">
+                            <i class="fas fa-times protfolio-close-btn"></i>
+                            <h3>Eduma</h3>
+                            <a href="https://github.com/HyperDevil-X/Eduma" target="_blank"><img src="images/school2.jpg" alt=""></a>
+                            <p>A school management system web application is a digital platform designed to streamline and automate various administrative and academic tasks within educational institutions. It facilitates efficient management of student information, attendance, grades, schedules, and communication between teachers, students, and parents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Web Application </h3>
+                            <span>E-commerce using Wordpress</span>
+                        </div>
+                        <img src="images/ecommerce2.jpg" alt="">
+                    </div>
+                    <div class="protfolio-model flex-center">
+                        <div class="protfolio-model-body">
+                            <i class="fas fa-times protfolio-close-btn"></i>
+                            <h3>Woodmart</h3>
+                            <a href="https://github.com/HyperDevil-X/woodmart" target="_blank"><img src="images/ecommerce3.jpg" alt=""></a>
+                            <p>An eCommerce web application enables businesses to sell products and services online, providing customers with a seamless shopping experience from the comfort of their homes. It integrates features such as product listings, shopping carts, secure payment gateways, and order management systems, ensuring a smooth and efficient transaction process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Web Application </h3>
+                            <span>Premium Car Rental using HTML,CSS,JavaScript,PHP,MYSQL</span>
+                        </div>
+                        <img src="images/rental1.jpg" alt="">
+                    </div>
+                    <div class="protfolio-model flex-center">
+                        <div class="protfolio-model-body">
+                            <i class="fas fa-times protfolio-close-btn"></i>
+                            <h3>Premium Car Rental</h3>
+                            <a href="https://github.com/HyperDevil-X/tailwind_css" target="_blank"><img src="images/rental2.jpg" alt=""></a>
+                            <p>A premium car rental web application provides a seamless and luxurious experience for users looking to rent high-end vehicles. Featuring an intuitive interface, the application allows customers to easily browse and select from a curated fleet of premium cars. Advanced search filters, real-time availability, secure payment options, and personalized customer service ensure a hassle-free rental process. The application also offers features like GPS tracking, 24/7 support, and exclusive membership benefits, catering to the needs of discerning clients seeking top-tier rental services.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fdjfj -->
+            </div>
+        </div>
+    </div>
+
+                <!----Protfolio end---->
+
+                <!----Get in touch start---->
+
+<div class="get-in-touch sub-section">
+    <div class="container">
+        <div class="content flex-center">
+            <div class="contact-card flex-center">
+                <div class="title">
+                    <h4>Let's Talk</h4>
+                    <h3>About Your</h3>
+                    <h2>Next Project</h2>
+                </div>
+                <div class="contact-btn">
+                    <a href="mailto:manojbid2003@gmail.com" target="_blank" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>  
+                        
+        <!----Get in touch end---->
+
+        <!----Contact start---->
+
+<section class="contact section" id="contact">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+            <div class="contact-left">
+                <h2>Let's discuss your project</h2>
+                <ul class="contact-list">
+                    <li>
+                        <h3 class="item-title">
+                            <i class="fas fa-phone"></i>Phone
+                        </h3>
+                        <span>+91 8918991088</span>
+                    </li>
+                    <li>
+                        <h3 class="item-title">
+                            <i class="fas fa-envelope"></i>Email Address
+                        </h3>
+                        <span><a href="mailto:manojbid2003@gmail.com" target="_blank">manojbid2003@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <h3 class="item-title">
+                            <i class="fas fa-map-marker-alt"></i>Official Address
+                        </h3>
+                        <span>Amrai More, Durgapur, WestBengal</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <p>I am always open to discussing product <br> <span>design, develope or partnerships</span></p>
+                <form method ="post" class="contact-form" name="c-form">
+                    <div class="first-row">
+                        <input type="text" name="your_name" placeholder="Name">
+                    </div>
+                    <div class="second-row">
+                        <input type="email" name="your_email" placeholder="Email">
+                        <input type="text" name="your_subject" placeholder="Subject">
+                    </div>
+                    <div class="thrid-row">
+                        <textarea name="message" id="" rows="7"  placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+         <!----Contact end---->
+
+          <!----Footer start---->
+
+<footer>
+    <div class="footer-container">
+        <div class="about group">
+            <h2>Personal</h2>
+            <p>Full Stack Developer and UI/UX Designer</p>
+            <a href="#about">About me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+            <h3>More</h3>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#protfolio">Protfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+            <h3>Follow</h3>
+        <ul>
+            <li><a href="https://github.com/HyperDevil-X" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://profile.indeed.com/" target="_blank"><i class="fa-solid fa-info"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/manoj-bid-0a1113220/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="footer-copyright group">
+        <p>	&#169; 2024 by <a href="https://github.com/HyperDevil-X" target="_blank">Hyperdevil-X</a>. All Rights Reserved</p>
+    </div>
+</footer>
+
+
+        <!----Footer end---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/service.js"></script>
+<script src="js/script.js"></script>
+<script src="js/protfolio.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/darklight.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/scrollreveal.js"></script>
+<script src="js/googlesheet.js"></script>
 </body>
 </html>
