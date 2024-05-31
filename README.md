@@ -1,8 +1,8 @@
 <h1 align ="center">Personal Protfolio</h1>
 <img src="cover.PNG">
- <h3  align ="center"><b>My Personal Protfolio Website using HTML5,CSS3,JAVASCRIPT,Google sheet</b></h3>
+ <h3  align ="center"><b>My Personal Protfolio Website using HTML5,CSS3,JAVASCRIPT,Google Sheet</b></h3>
  <br>
-<p>It is My Peronal Protfolio website which  is developed on the HTML5,CSS3,JAVASCRIPT programming which is used for frontend and also JAVASCRIPT is used for backend and  Google Sheet had used as a database. It includes various sections such as  Home , About, Skills, Services, Protfolio, Contact.</p>
+<p>It is My Peronal Protfolio website which  is developed on the HTML5,CSS3,JAVASCRIPT programming which is used for frontend and also JAVASCRIPT is used for backend and  Google Sheet is used as a database. It includes various sections such as  Home , About, Skills, Services, Protfolio, Contact.</p>
 <ul>
  <h1><b>Programing Languages<b></h1>
 <h2><b>Front-End</b></h2>
